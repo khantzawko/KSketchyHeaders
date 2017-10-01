@@ -21,12 +21,9 @@ class NewsItemCell: UITableViewCell {
                 categoryLabel.text = item.category.toString()
                 categoryLabel.textColor = item.category.toColor()
                 summaryLabel.text = item.summary
-                
             } else {
-                
                 categoryLabel.text = nil
                 summaryLabel.text = nil
-                
             }
         }
     }
@@ -36,7 +33,7 @@ class NewsItemCell: UITableViewCell {
         // Initialization code
     }
 
-    override func setSelected(selected: Bool, animated: Bool) {
+    override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state

@@ -1,34 +1,32 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F31a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Nv1-jI-oUr">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Nv1-jI-oUr">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="DpA-Ja-mw2">
             <objects>
                 <tableViewController id="Nv1-jI-oUr" customClass="ViewController" customModule="KSketchyHeaders" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="78" sectionHeaderHeight="28" sectionFooterHeight="28" id="8td-rd-IkK">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="338" sectionHeaderHeight="28" sectionFooterHeight="28" id="8td-rd-IkK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="oiy-xv-SaM">
-                            <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-header" translatesAutoresizingMaskIntoConstraints="NO" id="tAh-lO-72R">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
-                                </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="September 24" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ga1-R2-FjW">
-                                    <rect key="frame" x="20" y="20" width="164" height="29"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-header2" translatesAutoresizingMaskIntoConstraints="NO" id="tAh-lO-72R"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MM Sports Digest" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ga1-R2-FjW">
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="tAh-lO-72R" secondAttribute="trailing" id="4JU-2b-3wB"/>
                                 <constraint firstItem="Ga1-R2-FjW" firstAttribute="top" secondItem="oiy-xv-SaM" secondAttribute="top" constant="20" id="N3A-Re-lXj"/>
@@ -39,38 +37,22 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="78" id="ALh-Va-1Ge" customClass="NewsItemCell" customModule="KSketchyHeaders" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="328" width="600" height="78"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="12" reuseIdentifier="Cell" rowHeight="338" id="ALh-Va-1Ge" customClass="NewsTableViewCell" customModule="KSketchyHeaders" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="328" width="375" height="338"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ALh-Va-1Ge" id="QDP-cw-JOh">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="77"/>
+                                    <frame key="frameInset" width="375" height="338"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entertainment" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RY2-vZ-Isv">
-                                            <rect key="frame" x="12" y="8" width="107" height="20"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                            <color key="textColor" red="0.45371879700000001" green="0.18256753110000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dystopian films continue rule over box office with ‘Maze Runner’" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OXw-k9-sh5">
-                                            <rect key="frame" x="12" y="36" width="576" height="23"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                        <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g9S-Nu-fvZ">
+                                            <frame key="frameInset" minY="169" width="375"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </webView>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstItem="RY2-vZ-Isv" firstAttribute="leading" secondItem="QDP-cw-JOh" secondAttribute="leadingMargin" constant="4" id="KaG-Je-5I8"/>
-                                        <constraint firstAttribute="topMargin" secondItem="RY2-vZ-Isv" secondAttribute="top" id="Ppi-bh-bep"/>
-                                        <constraint firstItem="OXw-k9-sh5" firstAttribute="leading" secondItem="QDP-cw-JOh" secondAttribute="leadingMargin" constant="4" id="eex-nh-jTF"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="OXw-k9-sh5" secondAttribute="bottom" constant="10" id="f1U-1V-cbO"/>
-                                        <constraint firstItem="OXw-k9-sh5" firstAttribute="top" secondItem="RY2-vZ-Isv" secondAttribute="bottom" constant="8" id="nah-Z3-aLD"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="OXw-k9-sh5" secondAttribute="trailing" constant="4" id="zn7-Yz-N6I"/>
-                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="categoryLabel" destination="RY2-vZ-Isv" id="eH1-QK-cb9"/>
-                                    <outlet property="summaryLabel" destination="OXw-k9-sh5" id="kCh-ue-742"/>
+                                    <outlet property="webView" destination="g9S-Nu-fvZ" id="QqN-GG-hBA"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -84,10 +66,10 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mf1-1a-vv2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="805" y="337"/>
+            <point key="canvasLocation" x="804" y="336.88155922038982"/>
         </scene>
     </scenes>
     <resources>
-        <image name="bg-header" width="1242" height="825"/>
+        <image name="bg-header2" width="738" height="415"/>
     </resources>
 </document>
